@@ -1,0 +1,132 @@
+
+
+
+
+/*横スクロールさせないための設定*/
+html{
+  overflow-y:scroll;
+  height: auto;
+}
+
+
+/*背景画像設定*/
+body {
+  background-color:#F8F8F8;
+  background-repeat:no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
+  min-width
+  display: flex;
+ flex-direction: column;
+}
+
+
+header{
+   /*ヘッダーのデザイン*/
+   padding: 0.2em 0.5em;
+   margin: 1em 0;
+   color: #565656;
+   background: #1F1F1F;
+   box-shadow: 0px 0px 0px 10px #4169e1;
+   border: dashed 4px #778899;
+   border-radius: 8px;
+　 /*!!!*/
+}
+
+
+
+
+
+.title{
+  font-size:50px;
+
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  color: #FFFFFF;
+
+
+
+   text-align:center;
+}
+
+
+
+.menu-group {
+  color:#B40404;
+  font-color:#40FF00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:40px 0px;
+  list-style:none;
+  font-family: serif;
+}
+
+.English{
+  font-family: 'Caveat', cursive;
+}
+
+.menu-item{
+  display: inline-block;        /* インラインブロック要素にする */
+ background-color: #F7F7F7;/* 背景色指定 */
+ float:left;
+ text-align:center;/* 要素を中央に寄せる*/
+ width: 100%;
+  max-width: 200px;
+  padding: 10px;/* 背景の色の幅設定 */
+  font-weight:bold;/* 文字の太さ設定*/
+ font-family:"Courier New"  ;/* 文字のフォント設定*/
+}
+
+
+
+.mainpodition{
+  display: flex;
+
+}
+.training-menu{
+  display: flex;
+  padding:30px;
+  text-align:center;
+  justify-content: space-evenly;
+}
+
+.training-menu1{
+  background-color: #f0f8ff;
+   border-radius: 40px;/*角の丸みの設定*/
+   width: 27em
+
+}
+
+.training-menu2{
+  background-color: #00bfff;
+   border-radius: 40px;/*角の丸みの設定*/
+   width: 27em
+}
+
+.training-menu3{
+    background-color:#ff0000;
+     border-radius: 40px;/*角の丸みの設定*/
+     width: 27em
+}
+
+.otoiawase{
+  background-color: #ffa500;
+  margin : 0 auto;
+   width: 250px;
+    border-radius: 40px;/*角の丸みの設定*/
+    text-align:center
+}
+.footerlist{
+  /*要素を等間隔で表示させる*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style:none;
+    /*!!!*/
+    background-color:#deb887;
+    text-align-last: justify;
+
+  }
