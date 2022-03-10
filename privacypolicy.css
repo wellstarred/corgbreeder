@@ -1,0 +1,215 @@
+@media (min-width: 800px) {
+  /* 表示領域が800px以上の場合に適用するスタイル */
+  div.column { width: 240px; float: left; }
+}
+@media (max-width: 799px) {
+  /* 表示領域が800px未満の場合に適用するスタイル */
+  div.column { width: 100%; }
+}
+
+.pawslogo{
+ width:300px;
+ float: left;
+ filter:chroma(color=#ffffff );
+}
+
+
+
+/*スライドショー設定*/
+.slide {
+ position: relative;/* 親要素に設定することでこの要素を基準に新要素が配置させる*/
+ width: 900px;
+ height: 350px;
+ margin-left: 400px;
+ margin-top: 20px;
+}
+
+@keyframes slideshow{
+ 0%{
+   opacity: 0;
+ }
+ 10%{
+   opacity: 1;
+ }
+ 28%{
+   opacity: 1
+ }
+ 38%{
+   opacity: 0;
+ }
+ 100%{
+   opacity: 0;
+ }
+}
+
+.slide img {
+ position: absolute;
+ top: 50%;
+ left: 37.6%;
+ transform: translate(-50%, -50%);
+ width: 70%;
+ height: 100%;
+ opacity: 0;
+ animation :slideshow 24s linear infinite;
+}
+
+.slide img:nth-child(2){
+ animation-delay: 8s;
+}
+
+.slide img:last-child{
+ animation-delay: 16s;
+}
+/*!!!スライドショー設定*/
+
+
+/*メニュー設定*/
+.menu{
+ padding: 1em;
+ margin:0em 10px;
+ color: #60688c;
+ background: #fff;
+ border-top: solid 5px #4682b4;
+ box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  width: 170px;
+ float:left;
+}
+
+.snsicon{
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+
+}
+
+
+
+.title{
+  font-size:50px;
+
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  color: #FFFFFF;
+
+
+
+   text-align:center;
+}
+
+.menu{
+  padding: 1em;
+  margin:0em 10px;
+  color: #60688c;
+  background: #fff;
+  border-top: solid 5px #4682b4;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+   width: 170px;
+  float:left;
+ }
+
+ .snsicon{
+   height: 50px;
+   width: 50px;
+   margin-left: 20px;
+
+ }
+
+.menu-group {
+  color:#B40404;
+  font-color:#40FF00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:40px 0px;
+  list-style:none;
+  font-family: serif;
+}
+
+.English{
+  font-family: 'Caveat', cursive;
+}
+
+.menu-item{
+  display: inline-block;        /* インラインブロック要素にする */
+ background-color: #F7F7F7;/* 背景色指定 */
+ float:left;
+ text-align:center;/* 要素を中央に寄せる*/
+ width: 100%;
+  max-width: 200px;
+  padding: 10px;/* 背景の色の幅設定 */
+  font-weight:bold;/* 文字の太さ設定*/
+ font-family:"Courier New"  ;/* 文字のフォント設定*/
+}
+
+.payinfo{
+  position: relative;
+margin:60px 0 270px 270px;
+width: 70%;
+padding: 1em;
+border: 3px solid #4169e1;
+border-radius: 8px;
+font-weight: bold;
+}
+
+.payinfo .payinfotitle{
+  position: absolute;
+  display: inline-block;
+  top: -10px;
+  left: 15px;
+  padding: 0 10px;
+  line-height: 1;
+  font-size: 18px;
+  background: #4169e1;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mainpodition{
+  display: flex;
+
+}
+.training-menu{
+  text-align:center;
+  justify-content: space-evenly;
+  }
+
+.training-menu1{
+  background-color:#00fa9a ;
+   border-radius: 40px;/*角の丸みの設定*/
+   width: 600px;
+   margin:30px;
+}
+
+.training-menu2{
+  background-color: #00bfff;
+   border-radius: 40px;/*角の丸みの設定*/
+   width: 600px;
+   margin:30px;
+}
+
+.training-menu3{
+    background-color:#ff0000;
+     border-radius: 40px;/*角の丸みの設定*/
+     width: 600px;
+     margin:30px;
+}
+
+.otoiawase{
+  background-color: #ffa500;
+  margin : 0 auto;
+   width: 250px;
+    border-radius: 40px;/*角の丸みの設定*/
+    text-align:center
+}
+.footerlist{
+  /*要素を等間隔で表示させる*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style:none;
+    /*!!!*/
+    background-color:#deb887;
+    text-align-last: justify;
+
+  }
