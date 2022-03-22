@@ -146,11 +146,12 @@
   position: relative;
 margin:60px 0 270px 270px;
 width: 55%;
-padding: 1em;
+
 border: 3px solid #4169e1;
 border-radius: 8px;
 font-weight: bold;
 }
+
 
 .payinfo .payinfotitle{
   position: absolute;
