@@ -13,6 +13,14 @@
  filter:chroma(color=#ffffff );
 }
 
+body{
+   background-image:url("https://github.com/wellstarred/corgbreeder/blob/main/pawsbackimg.jpg?raw=true");
+   background-size: cover;
+  width: 100%;
+  height: 50%;
+ }
+ 
+
 
 
 /*スライドショー設定*/
