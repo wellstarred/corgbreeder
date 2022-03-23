@@ -1,3 +1,9 @@
+
+/* PC用CSS */
+@media print, screen and (min-width: 640px) {
+ 
+/* ここから通常のCSS */
+
 html {
     scroll-behavior: smooth;/*ページを滑らかにスクロールさせる*/
 }
@@ -391,3 +397,6 @@ select{
  }
 
 /*!!!お問い合わせフォーム*/
+
+    
+}
