@@ -44,7 +44,7 @@ body {
 
 /*貼り付けメモ風のフレーム*/
 .menu_box12  {
-   width: 320px;/* 紙の横幅 100%にすると全幅表示に */
+   width: 100%;/* 紙の横幅 100%にすると全幅表示に 変更前320px*/
    padding: 15px;
    margin: 2em auto;
    background: #fbc7f5;/* 紙の色 */
