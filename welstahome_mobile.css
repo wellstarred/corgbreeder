@@ -1,0 +1,404 @@
+/* スマートフォン用CSS */
+@media screen and (max-width: 640px) {
+ 
+img{
+max-width: 100%;
+height: auto;
+width /***/:auto;
+}
+ 
+/* ここから通常のCSS */
+
+html {
+    scroll-behavior: smooth;/*ページを滑らかにスクロールさせる*/
+}
+
+
+
+/* ブログ全体を枠で囲む */
+body {
+    width: 99%;
+    height: 100%;
+    border:20px solid #47a89c;/* 枠線 */
+    box-sizing:border-box;
+    background-color: #fafad2;
+}
+@media screen and (max-width: 767px){
+body {
+    border: 10px solid #47a89c;/* SP枠線の幅 */
+}
+}
+
+
+.logo{
+   width:100%;
+   top:0;
+}
+
+
+
+.menuitem{
+  display: flex;
+}
+
+
+/*貼り付けメモ風のフレーム*/
+.menu_box12  {
+   width: 320px;/* 紙の横幅 100%にすると全幅表示に */
+   padding: 15px;
+   margin: 2em auto;
+   background: #fbc7f5;/* 紙の色 */
+   color: #000;/* 文字色 */
+   box-shadow: 4px 4px 4px rgba(0,0,0,0.03);transform:rotate(2deg);
+   word-break: break-all;
+   text-align:center;
+     position:relative;
+ }
+.menu_box12 p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+.menu_box12_tape {
+    width: 50%;
+    height: 35px;
+    margin: -25px auto 0;
+    background: rgba(251, 234, 144, 0.5);/* テープの色 */
+    transform: rotate(-3deg);
+    opacity: 0.9;
+}
+.menu_box12_title {
+    text-align: center;
+    font-size: 1.3em!important;
+    margin-top: 10px!important;
+}
+.menu_box12_subtitle {
+    text-align: center;
+    font-size: 0.7em!important;
+    margin-bottom: 1em!important;
+}
+/*!!!!貼り付けメモ風のフレーム*/
+
+
+/*会社概要のフレーム*/
+
+.info_box2_6 {
+    position: relative;
+    padding: 1em 1.5em;
+    margin: 2em 0;
+    background-color: #ffffff;/*背景色*/
+    color: #000000;/*文字色*/
+    z-index: 1;
+    width: 600px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.info_box2_6::before,
+.info_box2_6::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.info_box2_6::before {
+    background-color:#fbc7f5;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.info_box2_6::after {
+    background-color: #edffdb;/*ズレている方の背景色*/
+    top: 5px;
+    left: 5px;
+    z-index: -2;
+}
+.info_box2_6 p {
+    margin: 0;
+    padding: 0;
+}
+/*！会社概要のフレーム*/
+.corgis{
+  width: 600px;
+  margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+/*我が家の愛意見達の見出し*/
+.mydog {
+  position: relative;
+  padding: 0.5em;
+  background: #fbc7f5;
+  text-align:center;
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.mydog::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px rgb(149, 158, 155);
+}
+/*！我が家の愛意見達の見出し*/
+
+
+
+
+.dogs{
+  margin-left: 300px;
+  margin-top: 40px;
+}
+
+
+.alfuintroduction{
+ display:inline-flex;
+}
+.alfu{
+
+}
+.sophiaintroduction{
+  display:inline-flex;
+}
+.sophia{
+height: 400px;
+width: 460px;
+}
+.hirointroduction{
+  display:inline-flex;
+}
+.hiro{
+height: 400px;
+width: 460px;
+}
+
+.elintroduction{
+  display:inline-flex;
+}
+
+.el{
+  height: 400px;
+  width: 460px;
+}
+
+.felintroduction{
+  display:inline-flex;
+}
+
+.fel{
+  height: 400px;
+  width: 460px;
+}
+
+
+.oltsintroduction{
+  display:inline-flex;
+}
+.olts{
+  height: 400px;
+    width: 460px;
+}
+
+
+
+
+/***追従するトップへ戻るボタン***/
+#page-top {
+    position: fixed;
+    right: 5px;
+    bottom: 40px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 90%;
+    line-height: 1.5rem;
+    color: #737373;
+    padding: 0 0 0 35px;
+    border-top: solid 1px;
+    margin-right: 50px;
+}
+#page-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 1px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+}
+/***トップへ戻るボタンここまで***/
+
+/*お問い合わせフォーム*/
+select{
+  width: 600px;
+  height: 50px;
+  font-size:14px;
+  border:1px;/*この要素を入れないとselectの大きさは変更できない*/
+  margin-left: 40px;
+  background: #eaedf2;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.radio{
+  　
+}
+
+.Form {
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+ }
+ @media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+ }
+ .Form-Item {
+  border-top: 3px
+  padding-top: 24px
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+ }
+ @media screen and (max-width: 480px) {
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+ }
+ .Form-Item:nth-child(5) {
+  border-bottom: 3px ;
+ }
+ .Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+ }
+ @media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+ }
+ .Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+ }
+ @media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+ }
+ .Form-Item-Label-Required {/*必須に関する設定*/
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #5bc8ac;/*必須の背景色*/
+  color: #fff;/*必須文字色*/
+  font-size: 14px;
+ }
+ @media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+ }
+ .Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+ }
+ @media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+ }
+ .Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+ }
+ @media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+ }
+ .Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #5bc8ac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+    margin-bottom: 20px;
+ }
+ @media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+ }
+
+/*!!!お問い合わせフォーム*/
